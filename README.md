@@ -1,2 +1,11 @@
-# study-record
-Never stop to study.
+# computer networking
+
+## cs144
+
+### Lab0
+
+    * Clion远程开发
+    
+    [参考Clion远程开发教程](https://cloud.tencent.com/developer/article/1406250)
+
+
