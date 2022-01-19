@@ -5,6 +5,7 @@
 ### Lab0
 
 * VM设置静态IP地址
+
   [参考ubuntu设置静态IP地址](https://www.myfreax.com/how-to-configure-static-ip-address-on-ubuntu-20-04/)
 
   
