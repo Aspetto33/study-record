@@ -46,7 +46,9 @@
 
 - 实验思路
 
-  
+  首先，选择合适的数据结构存储传递过来的segment，因为每个segment是由index和data组成的（特殊的结束字节有一个eof标志位，代表结束字节）。基于此，选择std::map。同时map的查找时间复杂度为O(logn)。
+
+  然后要理解_capacity代表的含义。
 
 ### Lab2
 
