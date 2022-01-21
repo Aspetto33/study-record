@@ -60,33 +60,33 @@
 
 ​		2、index > _next_unassemble_index
 
-​			此时取距离index最近的前面一段数据和index值，以及取距离index最近的后面的一段数据和index值。
+​						此时取距离index最近的前面一段数据和index值，以及取距离index最近的后面的一段数据和index值。
 
-​			1）取index前面的数据
+​						1）取index前面的数据
 
-​					1⃣️ index大于前面数据的长度+index
+​									1⃣️ index大于前面数据的长度+index
 
-​							此时说明没有重叠出现，不用处理。
+​									此时说明没有重叠出现，不用处理。
 
-​					2⃣️ index小于前面数据的长度+index
+​									2⃣️ index小于前面数据的长度+index
 
-​							此时说明index的部分数据和已经存储在map里面的数据重叠，
+​									此时说明index的部分数据和已经存储在map里面的数据重叠，
 
-​							将index后移到前面数据的长度+index处。
+​									将index后移到前面数据的长度+index处。
 
 ​			2）取index后面的数据
 
-​					1⃣️ index+data.size()小于后面数据的index
+​									1⃣️ index+data.size()小于后面数据的index
 
-​							此时说明后面部分没有重叠数据，不用处理。
+​									此时说明后面部分没有重叠数据，不用处理。
 
-​					2⃣️ index+data.size()大于后面数据的index
+​									2⃣️ index+data.size()大于后面数据的index
 
-​							这种情况又分为两种子情况：
+​									这种情况又分为两种子情况：
 
-​							部分重叠，将后面数据的index移到index+data.size()处即可；
+​									部分重叠，将后面数据的index移到index+data.size()处即可；
 
-​							完全覆盖，此时需要map中覆盖的数据删除，同时需要不断往后判断，是否还有覆盖数据。
+​									完全覆盖，此时需要map中覆盖的数据删除，同时需要不断往后判断，是否还有覆盖数据。
 
 ​	综上，上面的操作可以保证map中存放的segment之间不会有重复数据。
 
