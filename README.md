@@ -52,7 +52,7 @@
 
   ![cs144-lab1-capacity](/Users/yangqian/study/study-record/cs144-lab1-capacity.png)
 
-​		为了便于理解把绿色部分叫作lab0的ByteStream，即已经排好序的		字节流，此时并没有读，只是将其写入。		把红色部分称为_unassembled_strs，即用map存储没有排好序的segment。
+​		为了便于理解把绿色部分叫作lab0的ByteStream，即已经排好序的字节流，此时并没有读，只是将其写入。把红		色部分称为_unassembled_strs，即用map存储没有排好序的segment。
 
 ​		最后，考虑以下几种可能出现的情况：
 
