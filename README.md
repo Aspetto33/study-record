@@ -92,6 +92,12 @@
 
 ### Lab2
 
+* 实验目的
+
+  Lab2要求实现TCP Receiver，接收从TCP Sender传输过来的segment并将其组装成用户可读的ByteStream。
+
+* 实验思路
+
 ### Lab3
 
 ### Lab4
