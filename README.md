@@ -96,6 +96,11 @@
 
   Lab2要求实现TCP Receiver，接收从TCP Sender传输过来的segment并将其组装成用户可读的ByteStream。
 
+  同时TCP Receiver要给TCP Sender发送两个属性：
+
+  > - 第一个未组装的字节索引，称为**确认号ackno**，它是接收者需要的第一个字节的索引。
+  > - **第一个未组装的字节索引**和**第一个不可接受的字节索引**之间的距离，称为 **窗口长度window size**。
+
 * 实验思路
 
 ### Lab3
