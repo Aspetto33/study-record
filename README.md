@@ -103,6 +103,12 @@
 
 * 实验思路
 
+  1. 索引转换																																							
+
+     ![](/Users/yangqian/study/study-record/索引转换.png)
+
+     
+
 ### Lab3
 
 ### Lab4
